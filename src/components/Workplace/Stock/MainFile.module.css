@@ -1,0 +1,434 @@
+.structure {
+    width: 100%;
+    background: linear-gradient(to top, #7bffde, #e6f8f6);
+    /* background: linear-gradient(to right top, #65dfc9, #d3faf5); */
+}
+
+.gridDiv {
+    margin: 20px 12% 0 12%;
+    display: grid;
+    grid-template-columns: 68% 4% 28%;
+    grid-template-areas: "Left . Right";
+    padding-bottom: 5%;
+}
+
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); 
+}
+
+.circle{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #00CE9B;
+    border-radius: 50%;
+    animation: loading 1.5s cubic-bezier(.8, .5, .2, 1.4) infinite;
+    transform-origin: bottom center;
+    position: relative;
+    margin: 3px;
+    filter: blur(0.5px)
+}
+  
+@keyframes loading{
+    0% {
+      transform: translateY(0px);
+      background-color: #00CE9B;
+    }
+    50% {
+      transform: translateY(20px);
+      background-color: #7bffde;
+    }
+    100% {
+      transform: translateY(0px);
+      background-color: #00CE9B;
+    }
+}
+
+.circle1 {
+    animation-delay: 0.2s;
+}
+.circle2 {
+    animation-delay: 0.4s;
+}
+.circle3 {
+    animation-delay: 0.6s;
+}
+.circle4 {
+    animation-delay: 0.8s;
+}
+  
+
+/* LEFT SIDE */
+.leftSide {
+    grid-area: Left;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    border-radius: 9px;
+    height: fit-content;
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+.leftSideGraph {
+    position: relative;
+}
+
+.liveInfo {
+    position: absolute;
+    z-index: 10;
+    margin: 20px 0 0 30px;
+}
+
+.symbolLogoGrid {
+    /* display: grid;
+    grid-column-gap: 5px;
+    grid-template-areas: "Symbol StockLogo"; */
+}
+
+.stockLogo {
+    height: 40px;
+    display: inline;
+    margin-bottom: -7px;
+}
+
+.symbol {
+    display: inline;
+    font-size: 36px;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.graph {
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 400px;
+    z-index: 5;
+}
+
+canvas {
+    display: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 400px;
+    z-index: 5;
+    /* border-radius: 6px; */
+}
+
+
+/* RANGE NAV */
+.rangeNav {
+    background-color: white;
+    padding: 3px 0 3px 14px;
+}
+
+.rangeNav button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+	text-decoration: none;
+    outline: none;
+    font-family: 'Rubik';
+    margin: 7px;
+    padding: 5px;
+    transition: all 0.2s;
+}
+
+.rangeNav button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border-bottom: 1px solid black; */
+    border-radius: 5px;
+}
+
+.pressed {
+    font-weight: bold;
+}
+
+
+/* PROFILE */
+.leftSideOther {
+    padding: 0 3%;
+}
+
+.profile {
+    height: fit-content;
+    padding: 5px 0 5px 0;
+    margin-bottom: 15px;
+}
+
+.profileTitle{
+    font-size: 20px;
+}
+
+.companyInfo{
+    font-size: 16px;
+}
+
+.shortened {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.shortened2 {
+    display: none;
+}
+
+.longeringBtn {
+    text-decoration: none;
+    color: #00CE9B;
+    margin: 0;
+    font-size: 16px;
+    float: right;
+    cursor: pointer;
+}
+
+.companyStats{
+    height: fit-content;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.companyStatsGrid1 {
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                        'Stat Stat Stat Stat'
+                        'Stat Stat Stat Stat';
+}
+
+.companyStatsGrid2 {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-template-areas: 
+                        'Stat Stat Stat Stat'
+                        'Stat Stat Stat Stat'
+                        'Stat Stat Stat Stat';
+}
+
+.companyStatsGroup{
+    grid-area: 'Stat';
+}
+
+.companyStatsGroupTitle{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.companyStatsGroupValue{
+    margin: 0;
+    font-size: 15px;
+}
+
+.profileAnalyticsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'Description Radar';
+}
+
+.profileAnalyticsDescription {
+    grid-area: 'Description';
+    padding: 10px 10px 10px 0;
+}
+
+.profileAnalyticsDescriptionGroup{
+    padding: 10px 10px 10px 0;
+}
+
+.profileAnalyticsDescriptionGroupTitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.profileAnalyticsDescriptionGroupText{
+    font-size: 15px;
+    margin: 0;
+}
+
+.profileAnalyticsRadar {
+    grid-area: 'Radar';
+}
+
+/* RIGHT SIDE */
+.rightSide {
+    grid-area: Right;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    backdrop-filter: blur(12px);
+    border-radius: 9px;
+    height: 300px;
+    height: fit-content;
+    z-index: 2;
+    position: sticky;
+    top: 2%;
+}
+
+.buyButton, .sellButton {
+    width: 50%;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 0;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    outline: 0;
+}
+
+.buyButton {
+    border-top-left-radius: 6px;
+}
+
+.sellButton {
+    border-top-right-radius: 6px;
+}
+
+.buyOrSellPressed {
+    font-weight: 500;
+    border-bottom: 2px solid black;
+}
+
+/* .buyButton:hover, .sellButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+} */
+
+.titleStock {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* BUYStock and SELLStock */
+.stockForm {
+    height: 100%;
+    padding: 7%;
+}
+
+.formGroup {
+    width: 100%;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 50% 44%;
+    grid-column-gap: 6%;
+    grid-template-areas: "Description Input";
+}
+
+.buysellInput {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 5px 0 5px 10px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(12px);
+    border: none;
+    border-radius: 6px;
+    outline: 0;
+}
+
+.buysellLabel {
+    grid-area: "Description";
+    padding: 5px 0 5px 0;
+}
+
+.formGroupInfo {
+    padding-bottom: 15px;
+}
+
+.stockInfo {
+    font-size: 16px;
+    color: #00CE9B;
+    float: left;
+}
+
+.stockPrice {
+    font-size: 16px;
+    float: right;
+}
+
+.formResult {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid white;
+}
+
+.stockAmountLabel, .dollarAmountLabel {
+    float: left;
+    font-size: 16px;
+}
+
+.stockAmountValue, .dollarAmountValue {
+    float: right;
+    font-size: 16px;
+}
+
+.exception {
+    text-align: left;
+    font-size: 13px;
+    color: #ce0037;
+    margin: 20px 0 0 0;
+}
+
+.formSubmitBtn, .formConfirmBtn {
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 3% 7% 3% 7%;
+    margin-top: 20px;
+    background: transparent;
+    font-family: 'Rubik';
+    border: 3px solid #00CE9B;
+    transition: all 0.2s;
+    border-radius: 6px;
+    outline: none;
+}
+
+.formSubmitBtnDisabled {
+    width: 100%;
+    font-size: 16px;
+    padding: 3% 7% 3% 7%;
+    margin-top: 20px;
+    background: transparent;
+    font-family: 'Rubik';
+    border: 1px solid gray;
+    transition: all 0.2s;
+    border-radius: 6px;
+    outline: none;
+}
+
+.formCancel {
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    color: #ce0037;
+    margin: 20px 0 0 0;
+}
+
+.hideBtn {
+    display: none;
+}
+
+.hideOpacityBtn {
+    opacity: 30%;
+}
+
+.formSubmitBtn:hover, .formConfirmBtn:hover {
+    background-color: #00CE9B;
+    color: white;
+}
+

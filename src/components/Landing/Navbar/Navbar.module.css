@@ -1,0 +1,87 @@
+.structure{
+    font-family: 'Rubik';
+    padding: 15px 0 15px 0;
+    display: grid;
+    grid-template-columns: 40% 10% 10% 20% 20%;
+    grid-template-areas: "Navi . Lang . Auth";
+    align-items: center;
+    font-size: 15px;
+}
+
+.Navi{
+    grid-area: Navi;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik';
+}
+
+.Navi a {
+    text-decoration: none;
+    color: #4F5665;
+}
+
+.Navi a:hover {
+    font-weight: 500;
+}
+
+.Logo {
+    height: 48px;
+    width: 44px;
+}
+
+.Lang{
+    display: flex;
+    grid-area: Lang;
+    justify-content: space-evenly;
+}
+
+.First_a{
+    justify-self: center;
+    border: none;
+    font-weight: bold;
+    font-family: 'Rubik';
+    border-radius: 50%;
+    padding: 10px 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.First_b{
+    justify-self: center;
+    font-weight: bold;
+    font-family: 'Rubik';
+    border-radius: 50%;
+    border-color: black;
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Lang button:hover {
+    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.24);
+    transition: all 0.5s;
+}
+
+.Auth{
+    grid-area: Auth;
+}
+
+.Button{
+    font-family: 'Rubik';
+    cursor: pointer;
+    padding: 10px 10%;
+    border-radius: 50px;
+    border: 1px solid #00CE9B;
+    background-color: #00CE9B;
+    color: white;
+    font-weight: 500;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.Button:hover {
+    box-shadow: 0 0px 25px 0 #00ce9bcc, 0 0px 50px 0 rgba(0,0,0,0.24);
+}

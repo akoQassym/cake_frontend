@@ -1,0 +1,61 @@
+.structure{
+    font-family: 'Rubik';
+    padding: 10px 5% 10px 5%;
+    display: grid;
+    grid-template-columns: 5% 5% 35% 5% 55%;
+    grid-template-areas: "Logo . Search . Nav";
+    align-items: center;
+    font-size: 15px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(12px);
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+/* Logo */
+.logoDiv{
+    grid-area: Logo;
+}
+
+.Logo {
+    height: 48px;
+    width: 44px;
+}
+
+/* Search */
+.searchDiv {
+    grid-area: Search;
+    display: flex;
+    align-items: center;
+}
+
+.searchDiv input[type="text"] {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 0;
+    outline: 0;
+    border-width: 0 0 1px;
+    transition: 0.3s;
+    font-family: 'Rubik';
+    opacity: 50%;
+    background-color: transparent;
+    clip-path: inset(0 17px 0 0);
+}
+
+.searchDiv input[type="text"]:focus {
+    opacity: 100%;
+}
+
+/* Nav */
+.navDiv {
+    grid-area: Nav;
+    padding: 0px 10% 0px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik';
+}
+
+.navDiv a {
+    text-decoration: none;
+    font-weight: 500;
+}

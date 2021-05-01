@@ -1,0 +1,53 @@
+.structure {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "Left Right";
+  padding-bottom: 5%;
+}
+
+.Left_Side {
+  grid-area: Left;
+  padding: 0 20% 0 0;
+}
+
+.Text{
+    color: #4F5665;
+    font-size: 16px;
+}
+
+.Left_Side p {
+  font-size: 26px;
+  color: #4f5665;
+  grid-area: Label;
+  font-weight: 500;
+}
+
+.Right_Side {
+  grid-area: Right;
+  align-self: flex-end;
+}
+
+.Fractional {
+  height: 350px;
+  width: 600px;
+}
+
+.Button {
+  font-family: 'Rubik';
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 17px 35px 17px 35px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-color: white;
+  color: #00CE9B;
+  font-size: 16px;
+  box-shadow: 0 15px 15px 0 #00ce9bcc, 0 15px 25px 0 rgba(0,0,0,0.24);
+  transition: all 0.5s;
+  font-weight: 500;
+}
+
+.Button:hover {
+  box-shadow: 0 20px 25px 0 #00ce9bcc, 0 25px 50px 0 rgba(0,0,0,0.24);
+}

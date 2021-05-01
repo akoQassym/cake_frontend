@@ -1,0 +1,59 @@
+.structure {
+    padding-top: 3%;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-bottom: 3%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "Left Right";
+    color: #4F5665;
+    background-color: white;
+}
+
+.LeftSide{
+    grid-area: Left;
+}
+
+.LeftP {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.Logo {
+    width: 180px;
+    height: 100px;
+}
+
+.Button {
+    font-family: 'Rubik';
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #00CE9B;
+    background-color: #00CE9B;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.24);
+    transition: all 0.5s;
+    font-weight: 500;
+}
+
+.Button:hover {
+    box-shadow: 0 0px 25px 0 #00ce9bcc, 0 0px 50px 0 rgba(0,0,0,0.24);
+}
+
+.RightSide {
+    padding-left: 20%;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-column-gap: 7%;
+    grid-template-areas: "WhoAreWe OurProducts BecomePartner";
+    grid-area: Right;
+    font-size: 15px;
+}
+
+.Title {
+    font-weight: 500;
+}
+

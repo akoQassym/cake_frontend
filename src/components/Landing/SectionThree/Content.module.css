@@ -1,0 +1,90 @@
+.Title {
+    font-size: 25px;
+    color: #4F5665;
+    text-align: center;
+}
+
+.Box {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 14px 35px rgba(0,0,0,0.25), 0 10px 35px rgba(0,0,0,0.22);
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "Picture Calculator";
+    max-height: 420px;
+}
+
+.Picture {
+    grid-area: Picture;
+    background-image: url('./Pictures/sp5002.png');
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height:inherit;
+}
+
+.Calculator {
+    grid-area: Calculator;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:#4F5665;
+}
+
+.Topic {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #00CE9B;
+}
+
+.Meaning {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.Calculating {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 25% 25% 25% 25%;
+    font-size: 16px;
+}
+
+.Input {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-self: end;
+    align-self: center;
+}
+
+.InputForm {
+    font-size: 20px;
+    width: max-content;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.InputForm:focus {
+    border-radius: 0;
+    border: 2px solid black;
+}
+
+.Result {
+    justify-self: end;
+    font-size: 20px;
+}
+
+.Profit {
+    color: #00CE9B;
+    margin:0;
+}
+

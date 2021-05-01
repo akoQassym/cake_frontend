@@ -1,0 +1,194 @@
+.structure{
+    text-align: center;
+}
+
+.Title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 8%;
+    margin-bottom: 1%;
+    color: #0B132A;
+}
+
+.Text{
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.Offer {
+    margin: 5% 15% 5% 15%;
+    border: 1px solid #4F5665;
+    border-radius: 15px;
+    padding: 2% 5%;
+    color: #4F5665;
+}
+
+.Attention {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0B132A;
+}
+
+.Attention span {
+    color: red;
+}
+
+.Medium {
+    font-weight: 500;
+}
+
+.Discount {
+    color: #00CE9B;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Timer {
+    width: 80%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr;
+    grid-template-areas: "days interval hours interval minutes interval seconds";
+}
+
+.Timer span {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.Days {
+    grid-area: "days";
+    display: grid;
+    grid-template-rows: 2em 1em;
+    grid-template-areas: "daysValue" "dayStamp";
+}
+
+.DaysValue {
+    grid-area: "daysValue";
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    height: fit-content;
+}
+
+.DaysValue p, .HoursValue p, .MinutesValue p, .SecondsValue p {
+    margin: 0px;
+}
+
+.DayStamp p, .HourStamp p, .MinuteStamp p, .SecondStamp p {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.DayStamp {
+    grid-area: "dayStamp";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    height: fit-content;
+}
+
+.Hours {
+    grid-area: "hours";
+    display: grid;
+    grid-template-rows: 2em 1em;
+    grid-template-areas: "hoursValue" "hourStamp";
+}
+
+.HoursValue {
+    grid-area: "hoursValue";
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    height: fit-content;
+}
+
+.HourStamp {
+    grid-area: "hourStamp";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    height: fit-content;
+}
+
+.Minutes {
+    grid-area: "minutes";
+    display: grid;
+    grid-template-rows: 2em 1em;
+    grid-template-areas: "minutesValue" "minuteStamp";
+}
+
+.MinutesValue {
+    grid-area: "minutesValue";
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    height: fit-content;
+}
+
+.MinuteStamp {
+    grid-area: "minuteStamp";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    height: fit-content;
+}
+
+.Seconds {
+    grid-area: "seconds";
+    display: grid;
+    grid-template-rows: 2em 1em;
+    grid-template-areas: "secondsValue" "secondStamp";
+}
+
+.SecondsValue {
+    grid-area: "secondsValue";
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    height: fit-content;
+}
+
+.SecondStamp {
+    grid-area: "secondStamp";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    height: fit-content;
+}
+
+.Divider {
+    grid-area: "interval";
+    font-size: 20px;
+    display: flex;
+    align-content:space-around;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+.p_buttom {
+    font-family: 'Rubik';
+    font-size: 16px;
+    margin-top: 5%;
+    cursor: pointer;
+    padding: 2% 8%;
+    border-radius: 50px;
+    border: 1px solid #00CE9B;
+    background-color: white;
+    color: #00CE9B;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.p_buttom:hover {
+    box-shadow: 0 0px 25px 0 #00ce9bcc, 0 0px 50px 0 rgba(0,0,0,0.24);
+}

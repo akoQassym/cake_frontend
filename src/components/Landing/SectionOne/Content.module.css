@@ -1,0 +1,53 @@
+.structure{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "Left Picture";
+}
+
+.LeftSide{
+    grid-area: Left;
+    align-self: center;
+}
+
+.H1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #0B132A;
+    margin-bottom: 0px;
+}
+
+.H2{
+    font-size: 36px;
+    color:#4F5665;
+    margin: 0px;
+}
+
+.Picture{
+    padding-top: 5%;
+    grid-area: Picture;
+}
+
+.Picture img {
+    height: 600px;
+    width: 750px;
+    margin-left: -30%;
+}
+
+.button {
+    font-family: 'Rubik';
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 3% 7% 3% 7%;
+    border-radius: 30px;
+    border: 1px solid #00CE9B;
+    background-color: #00CE9B;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 15px 15px 0 #00ce9bcc, 0 15px 25px 0 rgba(0,0,0,0.24);
+    transition: all 0.5s;
+    font-weight: 500;
+}
+
+.button:hover {
+    box-shadow: 0 20px 25px 0 #00ce9bcc, 0 25px 50px 0 rgba(0,0,0,0.24);
+}

@@ -1,0 +1,80 @@
+.structure {
+    display: grid;
+    grid-template-rows: 0.05fr 0.65fr 0.5fr 0.8fr 0.6fr 0.6fr 0.6fr 1fr 0.1fr;
+    grid-template-areas: "Navbar" "One" "Two" "Three" "Four" "Five" "Six" "Seven" "Eight";
+    font-family: 'Rubik';
+    max-height: 5760px;
+    border-collapse: collapse;
+}
+
+.Navbar {
+    grid-area: Navbar;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    width: 80%;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 0 0px 35px rgba(0,0,0,0.25);
+}
+
+.One {
+    padding-left: 17%;
+    padding-right: 17%;
+    grid-area: One;
+    background-image: url('./SectionOne/Pictures/Background2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Two {
+    padding-left: 17%;
+    padding-right: 17%;
+    grid-area: Two;
+    background-color: #ECFAFF;
+}
+
+.Three {
+    padding-left: 17%;
+    padding-right: 17%;
+    grid-area: Three;
+    background-color: #f7f7f7;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.Four {
+    padding-left: 17%;
+    padding-right: 17%;
+    grid-area: Four;
+    background-color: #ECFAFF;
+    border-collapse: collapse;
+}
+
+.Five {
+    padding-left: 17%;
+    padding-right: 17%;
+    grid-area: Five;
+}
+
+.Six {
+    padding-left: 17%;
+    padding-right: 17%;
+    grid-area: Six;
+    background-color: #ECFAFF;
+}
+
+.Seven {
+    padding-left: 17%;
+    padding-right: 17%;
+    grid-area: Seven;
+    background-color: #f7f7f7;
+}
+
+.Eight {
+    padding-left: 17%;
+    padding-right: 17%;
+    grid-area: Eight;
+}
+

@@ -1,0 +1,49 @@
+.header {
+    margin-top: 5%;
+    text-align: center;
+    color: #00CE9B;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.threePrinciple {
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 80px;
+}
+
+.Illustration {
+    display: block;
+    padding-top: 12px;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+}
+
+.IllustrationTenge {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Title {
+    padding-top: 4%;
+    padding-bottom: 5%;
+    font-size: 24px;
+    text-align: center;
+    color: #0B132A;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.About {
+    font-size: 16px;
+    text-align: center;
+    color: #4F5665;
+}

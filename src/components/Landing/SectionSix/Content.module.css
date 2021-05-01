@@ -1,0 +1,58 @@
+.structure {
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-template-areas: "Education Security Commissions";
+    justify-content: center;
+}
+
+.Education {
+    grid-area: Education;
+}
+
+.Security {
+    grid-area: Security;
+}
+
+.Commissions {
+    grid-area: Commissions;
+}
+
+.ImageOne {
+    display: block;
+    width: 200px;
+    height: 135px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ImageTwo {
+    display: block;
+    width: 157px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ImageThree {
+    display: block;
+    width: 164px;
+    height: 135px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Principle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4F5665;
+    margin-bottom: 0px;
+}
+
+.Description {
+    text-align: justify;
+    color: #4F5665;
+    font-size: 16px;
+}
